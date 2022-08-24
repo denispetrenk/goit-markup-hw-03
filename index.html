@@ -12,16 +12,20 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <link href="./css/styles.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <header class="header-studio">
-      <nav>
+      <nav class="container">
         <a class="logo" href="./index.html">
           <span class="logo-blue"> Web</span>Studio</a
         >
-        <ul class="navigation, list">
+        <ul class="navigation list">
           <li>
             <a class="navigation-item logo-blue" href="./index.html"> Студия</a>
           </li>
@@ -46,14 +50,14 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <section class="solutions">
         <h1 class="header">Ефективні рішення для вашого бізнесу</h1>
 
         <button class="button-serv" type="button">Замовити послугу</button>
       </section>
 
-      <section>
+      <section class="section-charact">
         <h2 class="visually-hidden">
           Характеристики - увага, пунктуальность ....
         </h2>
@@ -91,7 +95,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section">
         <h2 class="title-why">Чим ми займаємося</h2>
         <ul class="list">
           <li>
@@ -120,7 +124,7 @@
           </li>
         </ul>
       </section>
-      <section class="team">
+      <section class="team section">
         <h2 class="title-why">Наша команда</h2>
         <ul class="list">
           <li>
@@ -167,32 +171,36 @@
       </section>
     </main>
 
-    <footer class="foot">
-      <a class="logo" href="./index.html">
-        <span class="logo-blue"> Web</span>Studio</a
-      >
-      <address class="address">
-        <ul class="list">
-          <li>
-            <a
-              class="address"
-              href="https://goo.gl/maps/z6WJYS9VBnumN4T17"
-              target="_blank"
-              rel="noopener nofollow"
-            >
-              м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="mat-color" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="mat-color" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+    <footer class="container">
+      <div class="foot">
+        <a class="logo logo-footer" href="./index.html">
+          <span class="logo-blue"> Web</span>Studio</a
+        >
+        <address class="address">
+          <ul class="list">
+            <li>
+              <a
+                class="address"
+                href="https://goo.gl/maps/z6WJYS9VBnumN4T17"
+                target="_blank"
+                rel="noopener nofollow"
+              >
+                м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a class="mat-color" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mat-color" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
