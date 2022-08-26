@@ -33,6 +33,7 @@ h6,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
 img {
   display: block;
@@ -40,7 +41,7 @@ img {
   height: auto;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -99,7 +100,7 @@ img {
   text-transform: uppercase;
 }
 .line {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   font-style: normal;
   color: var(--background-color);
 }
@@ -159,6 +160,14 @@ img {
 .contacts-item:focus {
   color: var(--accent-color);
 }
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 34px;
+  gap: 8px;
+}
 .filter-item {
   /*кнопки фильтра портфолио*/
 
@@ -192,7 +201,11 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.img-list {
+  background-color: var(--second-background-color);
+  display: flex;
+  flex-wrap: wrap;
+}
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -297,6 +310,9 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--maintext-color);
+}
+.card-set {
+  background-color: var(--group-color);
 }
 .team-prof {
   font-family: inherit;

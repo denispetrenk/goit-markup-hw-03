@@ -17,36 +17,45 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a class="logo" href="./index.html">
-          <span class="logo-blue"> Web</span>Studio</a
-        >
-        <ul class="navigation, list">
-          <li><a class="navigation-item" href="./index.html">Студия</a></li>
-          <li>
-            <a class="navigation-item, logo-blue" href="./portfolio.html"
-              >Портфолио</a
-            >
-          </li>
-          <li><a class="navigation-item" href="">Контакти</a></li>
-        </ul>
+     <header class="header-studio">
+      <nav class="container">
+        <div class="header-container">
+          <a class="logo" href="./index.html">
+            <span class="logo-blue"> Web</span>Studio</a
+          >
 
-        <ul class="contacts, list">
-          <li>
-            <a class="contacts-item" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contacts-item" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="navigation list header-nav">
+            <li>
+              <a class="navigation-item logo-blue" href="./index.html">
+                Студия</a
+              >
+            </li>
+            <li>
+              <a class="navigation-item" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a class="navigation-item" href="">Контакти</a></li>
+          </ul>
+
+          <ul class="contacts list">
+            <li>
+              <a class="contacts-item" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contacts-item" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
+
+      <div class="line"></div>
     </header>
+
     <main class="container">
+      <section class="section">
       <ul class="filter list">
         <li><button class="filter-item" type="button">Усі</button></li>
         <li><button class="filter-item" type="button">Веб-сайти</button></li>
@@ -54,9 +63,10 @@
         <li><button class="filter-item" type="button">Дизайн</button></li>
         <li><button class="filter-item" type="button">Маркетинг</button></li>
       </ul>
+      
       <h1 class="visually-hidden">Проєкти</h1>
-      <ul class="list">
-        <li>
+      <ul class="img-list list">
+        <li class="card-set"> 
                      <img
               src="./images/portfolio/1.jpg"
               alt="our team"
@@ -148,6 +158,7 @@
             <p class="text">Додаток</p>
            </li>
       </ul>
+      </section>
     </main>
     <footer class="container">
       <div class="foot">
