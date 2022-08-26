@@ -10,6 +10,7 @@
   --text-color: #000000;
   --address-color: rgba(255, 255, 255, 0.6);
   --group-color: #eeeeee;
+  --line-color: #ececec;
   --main-font: "Roboto", sans-serif;
   --second-font: "Raleway", sans-serif;
 }
@@ -35,6 +36,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container {
   width: 1170px;
@@ -42,6 +45,22 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-right: auto;
+}
+
+.header-list-nav {
+  display: flex;
+  gap: 30px;
 }
 .logo {
   color: var(--text-color);
@@ -52,6 +71,7 @@ img {
   font-size: 26px;
   text-decoration: none;
   display: inline-block;
+  margin-right: 95px;
 }
 
 .header-studio {
@@ -78,7 +98,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.addr-color {
+.line {
+  border: 1px solid #ececec;
   font-style: normal;
   color: var(--background-color);
 }
@@ -87,9 +108,10 @@ img {
   color: var(--address-color);
 }
 .navigation-item {
+  display: block;
   color: var(--maintext-color);
   text-decoration: none;
-  padding: 32px, 0;
+  padding: 32px 0;
   font-size: 14px;
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -101,6 +123,12 @@ img {
 .logo-blue {
   text-decoration: none;
   color: var(--accent-color);
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
 }
 .contacts-item {
   text-decoration: none;
@@ -169,10 +197,25 @@ img {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+.solutions {
+  background-color: var(--footer-color);
+  color: var(--background-color);
+  margin-bottom: 47px;
+  padding: 200px 0 280px;
+}
+.solutions .header {
+  max-width: 1600px;
+  text-align: center;
+  margin: 0 auto;
+}
 .button-serv {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--accent-color);
   color: var(--main-background-color);
-
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -183,12 +226,12 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.solutions {
-  background-color: var(--footer-color);
-  color: var(--background-color);
-  margin-bottom: 47px;
-}
+.characters {
+  display: flex;
+  justify-items: center;
 
+  margin: 0 auto;
+}
 .title {
   /*заголовок проектов в порфолио*/
 
@@ -229,6 +272,16 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
+.why-list,
+.team-list {
+  display: flex;
+  gap: 30px;
+  margin-left: 0;
+}
+.why-list:first-child,
+.team-list:first-child {
+  margin-left: 0;
+}
 .text {
   /*текст в проектах портфолио*/
   font-family: inherit;
@@ -255,7 +308,7 @@ img {
   color: var(--paragraph-color);
 }
 .foot {
-  padding: 60px, 0;
+  padding: 60px 0;
 }
 .logo-footer {
   padding-bottom: 20px;
