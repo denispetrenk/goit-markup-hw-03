@@ -359,7 +359,7 @@ img {
 .foot .address {
   background-color: var(--footer-color);
   /*куда переставить цвет текста?!!!!!*/
-  /* color: var(--background-color);       */
+  color: var(--background-color);
 }
 .address-item {
   margin-bottom: 9px;
