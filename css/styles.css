@@ -157,14 +157,13 @@ img {
 .filter {
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 34px;
+
+  margin-bottom: 50px;
   gap: 8px;
 }
 .filter-item {
   /*кнопки фильтра портфолио*/
-
+  padding: 6px 22px;
   border: 0;
   background-color: var(--second-background-color);
   border-radius: 4px;
@@ -196,9 +195,10 @@ img {
   overflow: hidden;
 }
 .img-list {
-  background-color: var(--second-background-color);
+  /* background-color: var(--second-background-color);*/
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .hero {
@@ -235,7 +235,7 @@ img {
 }
 .title {
   /*заголовок проектов в порфолио*/
-
+  margin-bottom: 4px;
   font-size: 18px;
   font-weight: 700;
   line-height: calc(36 / 18);
@@ -294,12 +294,14 @@ img {
   padding-top: 0;
 }
 .team-item {
+  max-width: 270px;
   /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-name {
+  margin-bottom: 10px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -308,14 +310,18 @@ img {
   text-align: center;
   color: var(--maintext-color);
 }
-.team-item-title {
-  padding: 30px 0 10px;
+.team-card {
+  padding: 30px 0;
 }
 .team-item-text {
   padding-bottom: 30px;
 }
 .card-set {
-  background-color: var(--group-color);
+  /* background-color: var(--group-color);*/
+}
+.card-item {
+  padding: 20px 24px;
+  border: 1px solid var(--group-color);
 }
 .team-prof {
   font-family: inherit;
@@ -330,7 +336,6 @@ img {
   padding: 60px 0;
 }
 .logo-footer {
-  padding-bottom: 20px;
 }
 .address {
   text-decoration: none;
@@ -340,6 +345,7 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   text-align: left;
+  margin-top: 20px;
 }
 
 .list .address:hover,
@@ -352,5 +358,9 @@ img {
 .foot .logo,
 .foot .address {
   background-color: var(--footer-color);
-  color: var(--background-color);
+  /*куда переставить цвет текста?!!!!!*/
+  /* color: var(--background-color);       */
+}
+.address-item {
+  margin-bottom: 9px;
 }
